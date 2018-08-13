@@ -1,6 +1,6 @@
-# Contributors
+# Colaboradores
 
-Huge thank you to everyone here, they've made major commits to the wiki and helped make it what it is today!
+Muchas gracias a todos aqui, Ellos hicieron un gran compromiso con este wiki y ayudaron a hacerlo lo que es hoy! 
 
 * @ZedPea
 * @ar-x
@@ -8,6 +8,6 @@ Huge thank you to everyone here, they've made major commits to the wiki and help
 * @holytastyguacamole
 * @SoreGums
 
-And, of course-
+Y, por supuesto-
 
-* the TurtleCoin Community
+* a la comunidad de TurtleCoin
