@@ -1,25 +1,25 @@
 ![TurtleCoin Logo](images/turtlecoin_logo.png)
 
-# :turtle: :turtle: :turtle: Welcome to the TurtleCoin Wiki :turtle: :turtle: :turtle:
+# :turtle: :turtle: :turtle: Bienvenido al Wiki de TurtleCoin :turtle: :turtle: :turtle:
 
-This wiki is the main source of documentation for newcomers to the TurtleCoin project. If this is your first time hearing about TurtleCoin, we recommend starting with the [TurtleCoin website](https://turtlecoin.lol/).
+Este wiki es la fuente principal de documentación para novatos del proyecto TurtleCoin. Si esta es la primera vez que escuchas sobre TurtleCoin, Te recomendamos empezar por el [website de TurtleCoin](https://turtlecoin.lol/).
 
-## What is TurtleCoin?
+## ¿Que es TurtleCoin?
 
 TurtleCoin is a fast, easy and private cryptocurrency which allows you to send money to friends and businesses.
 
 One of TurtleCoin's main goals is to make things as simple and as accessible as possible for everyday people, creating a cryptocurrency which is inviting, fun and friendly.
 
-## Quick Navigation
+## Navegación rápida
 
-| **About TurtleCoin** | **Wallets** | **Mining** | **Contributing** |
+| **Sobre TurtleCoin** | **Monederos** | **Minado** | **Colaborar** |
 |:----------------------:|:-------------:|:------------:|:------------------:|
 | ![Logo](images/table_logo.png) | ![Wallets](images/table_wallet.png) | ![Mining](images/table_mine.png) | ![Dev](images/table_dev.png) |
-| [About TurtleCoin](about/About-TurtleCoin) | [Setting up a New Wallet](Getting-Started#new-wallet) | [Mining TurtleCoin](Getting-Started#mining) | [Contributing to TurtleCoin](about/Contributing) |
-| Learn more about TurtleCoin and the community | A guide on setting up a TurtleCoin wallet to start receiving some turtles! | A step-by-step guide to start mining TurtleCoin | Information on contributing to TurtleCoin |
+| [Sobre TurtleCoin](about/About-TurtleCoin) | [Configurá un Nuevo Monedero](Getting-Started#new-wallet) | [Minando TurtleCoin](Getting-Started#mining) | [Contribuyendo con TurtleCoin](about/Contributing) |
+| Aprende sobre TurtleCoin y su comunidad | Una guia para setear un monedero de TurtleCoin y empezar a recibir algunas tortugas! | Guia paso-a-paso para empezar a minar TurtleCoin | Información sobre como contribuir con TurtleCoin |
 
-## Have Questions or Need Help?
+## ¿Tenes alguna pregunta o necesitas ayuda?
 
-Check out our [Discord](http://chat.turtlecoin.lol/) or [subreddit](https://www.reddit.com/r/TRTL/) to get in touch.
+Entra a nuestro [Discord](http://chat.turtlecoin.lol/) o a [subreddit](https://www.reddit.com/r/TRTL/) para estar en contacto.
 
 
