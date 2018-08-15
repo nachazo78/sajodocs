@@ -1,25 +1,25 @@
-# Frequently Asked Questions
+# Preguntas Frecuentes
 
-## Mining and XMR-Stak
+## Minado y XMR-Stak
 
-### General mining questions<a name="mining-questions"></a>
+### Preguntas generales sobre minado<a name="mining-questions"></a>
 
-#### Q: How do I get started mining?
+#### P: ¿Como empiezo a minar?
 
- A: You can check [this guide](mining/Mining)
+ R: Podes mirar [esta guia](mining/Mining)
 
-#### Q: I'm using a Mac, can I still mine?
+#### P: Uso Mac ¿Puedo minar igualmente?
 
- A: Yes, of course! We're working on a guide.
-#### Q: I've started mining, how can I view my stats?
+ R: Si, por supuesto estamos trabajando en una guia.
+#### P: Empece a minar, ¿Como puedo ver mis estadísticas?
 
-A: Visit your pool's homepage. There should be a spot for you to put in your TRTL address, and you can then view your hashrate, pending balance, payouts, and more.
+R: Visitá el sitio web de tu pool. Deberia haber un lugar en donde poner tu dirección de TRTL, y poder ver tu hashrate, el balance pendiente, pagos y mas.
 
-#### Q: Why is the hashrate on the pool website different to what is shown in my miner?
+#### P: ¿Porque el hashrate en el pool es  diferente al que se muestra en mi minero?
 
-A: The values will always be slightly different as it is an estimate, but if there is a large difference, it is likely you have just started mining.
+R: Los valores siempre seran un poco diferentes, pero si existe una gran diferencia, is probable que simplemente estes empezando a minar.
 
-Your hashrate is calculated over time, and so it will slowly go up to the correct level.
+Tu hashrate es calculado con el correr del tiempo, se ira acomodando.
 
 #### Q: I've been mining for a while, but my pending balance hasn't gone up?<a name="pending-balance-not-gone-up"></a>
 
