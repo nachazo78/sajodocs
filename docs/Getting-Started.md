@@ -1,31 +1,30 @@
-# Getting Started with TurtleCoin
+# Empezando con TurtleCoin
 
-## What is TurtleCoin?
+## ¿Que es TurtleCoin?
 
-TurtleCoin is a fast, easy and private cryptocurrency which allows you to send money to friends and businesses.
+TurtleCoin es una cryptomoneda rápida, facil y privada que te permite mandar dinero a amigos y negocios.
 
-One of TurtleCoin's main goals is to make things as simple and as accessible as possible for everyday people, creating a cryptocurrency which is inviting, fun and friendly.
+Uno de los objetivos principales de TurtleCoin es mantener las cosas lo mas simple y accesible posible para que cualquier persona pueda usarla, creando una cryptomoneda que es atractiva, divertida y amistosa.
 
 
+Aqui abajo te vamos a enumerar una lista de tareas que tienes que completar para poder empezar con TurtleCoin.
 
-Below is essentially a checklist of tasks you have to do to get started with TurtleCoin.
+## 1. Crear un nuevo monedero (wallet)
 
-## 1. Setting Up a New Wallet
+Existen multiples tipos de monederos que s pueden usar con TurtleCoin.
 
-There are multiple types of wallets you can use with TurtleCoin.
+Para ver una lista de los monederos, su interfaz y una breve descripción, asi como tambien guias de como utilizarlos, podes mirar [esta guia](guides/wallets/Making-a-Wallet).
 
-To view a list of them, their interface and a brief description, as a well as guides on how to use them, you can check [this guide](guides/wallets/Making-a-Wallet).
+## 2. Empezar a minar TurtleCoin<a name="mining"></a>
 
-## 2. Start Mining TurtleCoin<a name="mining"></a>
+Minar es esencialmente el proceso de usar tu computadora para ayudar a verificar y asegurar una red de cryptomoneda, en nuestro caso, es la red de TurtleCoin. Haciendo esto, seras recompezado con TurtleCoin.
 
-Mining is essentially the process of using your computer to help verify and secure a cryptocurrency network, in our case, it is the TurtleCoin network. By doing this, you will be rewarded with TurtleCoin.
+Si deseas aprender sobre cryptomonedas, minar es una excelente opción!
 
-If you want to learn about cryptocurrencies, mining is a great place to start!
+Para ver una guia mas avanzada sobre minado de TurtleCoin, podes mirar [esta guia](guides/mining/Mining)
 
-To view an in-depth guide on how to mine TurtleCoin, you can view [this guide](guides/mining/Mining)
+## 3. Socializa!<a name="socialize"></a>
 
-## 3. Socialize!<a name="socialize"></a>
+Tenemos una gran comunidad y nos encantaria que vos formes parte de ella!
 
-We have an awesome community and would love for you to join in!
-
-You can join our [Discord](http://chat.turtlecoin.lol/) or come on over to our [subreddit!](https://reddit.com/r/trtl) We can't wait to see you :)
+Te podes unir a nuestro [Discord](http://chat.turtlecoin.lol/) or come on over to our [subreddit!](https://reddit.com/r/trtl) No podemos esperar para verte :)
