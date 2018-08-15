@@ -27,4 +27,4 @@ Para ver una guia mas avanzada sobre minado de TurtleCoin, podes mirar [esta gui
 
 Tenemos una gran comunidad y nos encantaria que vos formes parte de ella!
 
-Te podes unir a nuestro [Discord](http://chat.turtlecoin.lol/) or come on over to our [subreddit!](https://reddit.com/r/trtl) No podemos esperar para verte :)
+Te podes unir a nuestro [Discord](http://chat.turtlecoin.lol/) o ven  nuestro [subreddit!](https://reddit.com/r/trtl) No podemos esperar para verte :)
