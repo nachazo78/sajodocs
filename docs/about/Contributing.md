@@ -1,13 +1,12 @@
 
-# Contributing to TurtleCoin
+# Contribuyendo a TurtleCoin
 
-To help contribute and improve the TurtleCoin project, you can:
+Para ayudar a contribuir y mejorar el proyecto TurtleCoin, puede:
 
-* submit pull requests, or create issues over at our [GitHub Repo](https://github.com/turtlecoin/turtlecoin).
+* enviar solicitudes de extracción, o crear unidades trabajo en nuestro [Repositorio GitHub](https://github.com/turtlecoin/turtlecoin).
 
-* helping/making various tools which need to be refined/be worked on (wallets, daemons etc.).
-  Check the [GitHub Repo](https://github.com/turtlecoin/turtlecoin) for more information.
+* ayudar / hacer varias herramientas que necesitan ser refinadas / trabajadas (carteras, servicios, etc.). Verifique el [Repositorio GitHub](https://github.com/turtlecoin/turtlecoin) para más información.
 
-  The #bounties channel in the Discord has a list of bounties (pinned) offered to users who can help improve functionality in existing tools/make a tool which can be used.
+  El canal #bounties en Discord tiene una lista de recompensas (fijas) ofrecidas a los usuarios que pueden ayudar a mejorar la funcionalidad de las herramientas existentes / crear una herramienta que se pueda usar.
 
-* help improve this wiki by submitting a pull request/making an issue over at it's [GitHub Repo](https://github.com/turtlecoin/sajodocs)
+* ayudar a mejorar esta wiki al enviar una solicitud de extracción / resolver un problema en su [Repositorio GitHub](https://github.com/turtlecoin/sajodocs)
