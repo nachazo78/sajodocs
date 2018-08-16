@@ -1,14 +1,14 @@
-# Forking TurtleCoin
+# Bifurcando TurtleCoin
 
-So you want to fork TurtleCoin, huh?
+Entonces quieres bifurcar TurtleCoin, ¿eh?
 
-This guide will help you change the necessary sections of the code to set up your coin how you like it.
+Esta guía lo ayudará a cambiar las secciones necesarias del código para configurar su moneda a su gusto.
 
-Firstly, lets quickly talk about *licenses*.
+En primer lugar, vamos a hablar rápidamente sobre *licencias*.
 
-## Licences
+## Licencias
 
-When you're poking around the codebase, you might see something like this:
+Cuando estés hurgando en la base de código, es posible que veas algo como esto:
 
 ```
 // Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
@@ -18,24 +18,15 @@ When you're poking around the codebase, you might see something like this:
 // Please see the included LICENSE file for more information.
 ```
 
-At the top of each file. We ask when you fork us to make sure you leave these license headers intact.
-When we're programming on codebases like this, we're standing upon the shoulders of giants,
-and it's both polite, and a legal requirement of the licenses used, to credit the other contributors to the code.
+En la parte superior de cada archivo. Le preguntamos cuándo nos bifurca para asegurarnos de que deja intactos estos encabezados de licencia. Cuando estamos programando en bases de código como este, estamos sobre los hombros de gigantes, y es a la vez cortés, y un requisito legal de las licencias utilizadas, acreditar a los otros contribuidores al código.
 
-As you may be aware, the CryptoNote white paper set out the initial specification for CryptoNote coins.
-The ByteCoin developers created the first implementation of this specification working closely with the CryptoNote developers,
-and this is what has become ByteCoin today.
-This was forked early on to become Bitmonero, and then Monero.
-The Monero developers have contributed back significant chunks of code to the original ByteCoin codebase,
-and of course, they maintain their own repositories and code.
+Como sabrá, el documento técnico de CryptoNote establece la especificación inicial de las monedas de CryptoNote. Los desarrolladores de ByteCoin crearon la primera implementación de esta especificación trabajando en estrecha colaboración con los desarrolladores de CryptoNote, y esto es lo que se ha convertido hoy en ByteCoin. Esto se bifurcó desde el principio para convertirse en Bitmonero, y luego en Monero. Los desarrolladores de Monero han contribuido con trozos de código significativos a la base de código original de ByteCoin, y por supuesto, mantienen sus propios repositorios y códigos.
 
-The ForkNote Project was created as a fork of ByteCoin, to create a way to fork ByteCoin, easily
-by separating the needed constants and strings out into a separate file.
+El proyecto ForkNote se creó como una bifurcación de ByteCoin, para crear una forma de bifurcar ByteCoin, separando fácilmente las constantes y cadenas necesarias en un archivo separado.
 
-TurtleCoin then forked the Forknote Project and made our own changes, some of which were then contributed back to ForkNote.
+TurtleCoin luego bifurcó el Proyecto Forknote e hizo nuestros propios cambios, algunos de los cuales fueron luego devueltos a ForkNote.
 
-So, make sure if you're doing a find and replace that all of these lines remain intact.
-You can of course start adding your own copyright line, for example,
+Por lo tanto, asegúrese de buscar y reemplazar para que todas estas líneas permanezcan intactas. Por supuesto, puede comenzar a agregar su propia línea de derechos de autor, por ejemplo,
 
 ```
 // Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
@@ -46,84 +37,76 @@ You can of course start adding your own copyright line, for example,
 // Please see the included LICENSE file for more information.
 ```
 
-Ok, now we understand about licenses, let's get the code!
+Ok, ahora entendemos las licencias, ¡obtengamos el código!
 
 
-## The actual forking process
+## El proceso actual de bifurcación
 
-* The easiest way to fork TurtleCoin, is to start by making a GitHub account.
-You can do this [here](https://github.com/join) if you don't have an account already.
+* La forma más fácil de bifurcar TurtleCoin es comenzar creando una cuenta de GitHub. Puede hacer esto [aquí](https://github.com/join) si todavía no tiene una cuenta.
 
-* Make sure you're signed in. Next, head over to the TurtleCoin repo, and hit `Fork` in the top right corner.
+* Asegúrate de haber iniciado sesión. Luego, dirígete al repositorio de TurtleCoin y presiona `Fork` en la esquina superior derecha.
 
-* It should look something like this:
+* Debería verse algo como esto:
 
   ![Fork it!](https://i.imgur.com/ZNUS8ED.png)
 
-* Next, you want to get the source code on your computer.
-  Head over to the repository you just forked, and click the `Clone or Download` button.
-  We want to clone the source code, so we can make changes, then push it back up to GitHub.
+* Luego, si desea obtener el código fuente en su computadora. 
+  Dirígete al repositorio que acabas de abrir, y haz clic en el botón `Clone or Download`.
+  Queremos clonar el código fuente, para que podamos hacer cambios y luego volver a subirlo a GitHub.
 
-* It should look something like this:
+* Debería verse algo como esto:
 
   ![Clone it!](https://i.imgur.com/UlqtvF6.png)
 
-* Now, take this URL shown, and copy it.
+* Ahora, tome esta URL que se muestra y cópiela.
 
-* Next, you will need to download a git client.
-  If you are a windows user, I would suggest [Git  for Windows](https://gitforwindows.org/),
-  whilst if you are a Linux or Mac user, you should have this either already installed,
-  or can install it from your repos or with brew.
+* A continuación, tendrá que descargar un cliente de Git. 
+  Si eres un usuario de Windows, te sugiero [Git para Windows](https://gitforwindows.org/),
+  mientras que si eres un usuario de Linux o Mac, debes tenerlo ya instalado,
+  o instalarlo desde tus repositorios o con brew.
 
-* Once you have opened up git bash or a terminal, you should be able to type `git clone URL`,
-  where `URL` is the link you copied earlier, from GitHub.
+* Una vez que hayas abierto git bash o una terminal, deberías poder escribir `git clone URL`, donde URL es el enlace que         copiaste anteriormente, desde GitHub.
 
-* It should look something like this:
+* Debería verse algo como esto:
 
 ![Bop it!](https://i.imgur.com/Fv435iR.png)
 
-* Great, now the code is on our computer. We're almost ready to start changing it!
+* Genial, ahora el código está en nuestra computadora. ¡Estamos casi listos para comenzar a cambiarlo!
 
 
-Next, I'd like to talk quickly about *atomic units*. You can skip this section if you're a pro already.
+A continuación, me gustaría hablar rápidamente sobre las *unidades atómicas*. Puede saltear esta sección si ya es un profesional.
 
-## Atomic Units
+## Unidades Atómicas
 
-All of the constants in CryptoNoteConfig.h and most of the code, that refers to the actual amount of coins, is in *Atomic Units*.
+Todas las constantes en CryptoNoteConfig.h y la mayor parte del código, que se refiere a la cantidad actual de monedas, se encuentra en *Unidades Atómicas*.
 
-**What does this mean?**
+**¿Qué significa esto?**
 
-Well, if we're talking about TurtleCoin, we have 2 decimal places.
-That means, to get the atomic units of an amount of TRTL, we need to multiply the amount by 100, or 10^2.
+Bueno, si estamos hablando de TurtleCoin, tenemos 2 decimales. 
+Eso significa que para obtener las unidades atómicas de una cantidad de TRTL, necesitamos multiplicar la cantidad por 100 o 10 ^ 2.
 
-If we have 10.23 TRTL, this is 1023 in atomic units. Atomic units have no decimal point,
-and so can be represented as an integer, in the code.
-Some different currencies have a special name for their atomic units, to make it easier to talk about.
-In Bitcoin, this is called a *satoshi*, and in TurtleCoin, it is called a *shell*.
+Si tenemos 10.23 TRTL, esto es 1023 en unidades atómicas. Las unidades atómicas no tienen punto decimal y, por lo tanto, se pueden representar como un número entero en el código.
+Algunas monedas diferentes tienen un nombre especial para sus unidades atómicas, para que sea más fácil hablar de ellas. En Bitcoin, esto se llama *satoshi*, y en TurtleCoin, se llama *shell*.
 
-**Why is this helpful?**
+**¿Por qué es esto útil?**
 
-Computers are unable to accurately store floating point numbers (or, numbers with a decimal point),
-and so performing math on them is often problematic.
+Las computadoras no pueden almacenar con precisión los números de coma flotante (o números con un punto decimal), por lo que realizar cálculos matemáticos suele ser problemático.
 
-For example, let's say we want to split 10.00 TRTL between 3 people.
-If you perform `10.00 / 3` in a programming language, you will probably see a result similar to `3.3333333333333335`.
-Where did that 5 come from?! The computer is incapable of storing this number to its full amount of decimal places.
+Por ejemplo, supongamos que queremos dividir 10.00 TRTL entre 3 personas. Si actúa 10.00 / 3en un lenguaje de programación, probablemente verá un resultado similar a 3.3333333333333335. ¿De dónde salió ese 5? La computadora es incapaz de almacenar este número en su cantidad total de decimales.
 
-**How do we fix this?**
+**¿Cómo arreglamos esto?**
 
-Now, let's demonstrate how we can solve this issue, with *atomic units*.
-Again, we have 10.00 TRTL, and we want to split it between 3 people.
-Recall that to get the number of atomic units, we need to multiply by 100.
-So, we have a value of 1000 in atomic units. Now we can perform *integer division* instead.
-Let's perform `1000 / 3` - make sure you are using *integral division* in your programming language -
-and you should get a result of `333`.
+Ahora, demostré cómo podemos resolver este problema, con *unidades atómicas*.
+De nuevo, tenemos 10.00 TRTL, y queremos dividirlo entre 3 personas.
+Recuerde que para obtener el número de unidades atómicas, necesitamos multiplicar por 100. 
+Entonces, tenemos un valor de 1000 en unidades atómicas. Ahora podemos realizar una *división entera* en su lugar.
+Vamos a realizar 1000 / 3- asegúrate de que estés usando la *división integral* en tu lenguaje de programación y deberías obtener un resultado de 333.
 
-That's correct, each person can only get 333 units, or, if we want to convert back to TRTL, 3.33 TRTL.
-You might have noticed we're missing one atomic unit, or 0.01 TRTL.
-We have to use remainders when dealing with atomic values, as one atomic unit cannot be split down anymore.
+Eso es correcto, cada persona solo puede obtener 333 unidades, o, si queremos convertir de nuevo a TRTL, 3.33 TRTL.
+Es posible que haya notado que nos falta una unidad atómica, o 0.01 TRTL.
+Tenemos que usar los residuos cuando se trata de valores atómicos, ya que una unidad atómica ya no puede dividirse.
 
-So, the code might look something like this, when using atomic units.
+Entonces, el código puede parecerse a esto, cuando se usan unidades atómicas.
 
 ```cpp
 /* 10.00 TRTL in atomic units */
@@ -140,20 +123,19 @@ std::cout << "Splitting " << trtl << " TRTL" between << numPeople << " gives "
           << " TRTL spare." << std::endl;
 ```
 
-Usually, we will *always* use atomic units in our code,
-and only convert back to the expected representation with a decimal point when we print things to the user.
+Usualmente, *siempre* usaremos unidades atómicas en nuestro código, y solo volveremos a la representación esperada con un punto decimal cuando imprimamos cosas al usuario.
 
-Ok, we know what atomic units are, lets go change some stuff!
+Bien, sabemos qué son las unidades atómicas, ¡vamos a cambiar algunas cosas!
 
-## Changing the name of your binaries, i.e. CMakeLists.txt
+## Cambiar el nombre de tus binarios, es decir, CMakeLists.txt
 
-We're gonna start with some boring stuff - changing the name of your binaries.
+Comenzaremos con algunas cosas aburridas, cambiando el nombre de tus binarios.
 
-Open up CMakeLists.txt in the `src/` folder.
+Abra CMakeLists.txt en la carpeta `src/`.
 
-Note that there is also a CMakeLists.txt in the root directory, this is not the file you want!
+Tenga en cuenta que también hay un CMakeLists.txt en el directorio raíz, ¡este no es el archivo que desea!
 
-The lines we want to be changing are at the very bottom of the file.
+Las líneas que queremos cambiar están en la parte inferior del archivo.
 
 ```
 set_property(TARGET Daemon PROPERTY OUTPUT_NAME "TurtleCoind")
@@ -163,42 +145,41 @@ set_property(TARGET PoolWallet PROPERTY OUTPUT_NAME "poolwallet")
 set_property(TARGET Miner PROPERTY OUTPUT_NAME "miner")
 ```
 
-To change the name of a binary, change the final string in one of these lines. For example:
+Para cambiar el nombre de un binario, cambie la cadena final en una de estas líneas. Por ejemplo:
 
 `set_property(TARGET Daemon PROPERTY OUTPUT_NAME "AppleCoind")`
 
-Save the file, and recompile.
+Guarde el archivo y vuelva a compilar.
 
 
-## Changing version numbers
+## Cambiar los números de versión
 
-Another boring one - changing the version numbers. This is the thing that
-appears when you start up TurtleCoind, e.g. `Welcome to TurtleCoin v0.6.4.1264`
+Otro aburrido: cambiar los números de versión. Esto es lo que 
+aparece cuando inicias TurtleCoind, por ejemplo `Welcome to TurtleCoin v0.6.4.1264`
 
-Open up `src/version.h.in`.
+Abre `src/version.h.in`.
 
-The values are pretty self-explanatory. Set `PROJECT_NAME` to the name of your coin,
-`PROJECT_SITE` to your coins website, and `PROJECT_COPYRIGHT` to your copyright string.
+Los valores son bastante auto explicativos. Establezca `PROJECT_NAME` el nombre de su moneda,
+`PROJECT_SITE` su sitio web de monedas y `PROJECT_COPYRIGHT` su cadena de derechos de autor.
 
-Next, the version numbers.
+A continuación, los números de versión.
 
-`APP_VER_MAJOR` determines the first part of the version.
-You usually increment this value if you make a substantial change to your code,
-which potentially breaks APIs, wallet formats, blockchain formats, and so on.
+`APP_VER_MAJOR` determina la primera parte de la versión. 
+Por lo general, incrementa este valor si realiza un cambio sustancial en su código,
+lo que potencialmente puede dañar las API, los formatos de billetera, los formatos de cadena de bloques, etc.
 
-`APP_VER_MINOR` determines the second number of the version.
-This is usually incremented for significant upgrades, such as hard forks.
+`APP_VER_MINOR` determina el segundo número de la versión. determina el segundo número de la versión. Esto generalmente se incrementa para actualizaciones significativas, como las horquillas duras.Esto generalmente se incrementa para actualizaciones significativas, como las bifurcaciones duras.
 
-`APP_VER_BUILD` determines the final number of the version.
-This is usually incremented for small changes, such as bug fixes, speedups, small wallet changes, and so on.
+`APP_VER_BUILD` determina el número final de la versión. 
+Esto generalmente se incrementa por pequeños cambios, como correcciones de errores, aceleraciones, pequeños cambios en la billetera, etc.
 
-These numbers are then combined to form the full version number, in the format:
+Estos números se combinan para formar el número de versión completo, en el formato:
 
 `APP_VER_MAJOR`.`APP_VER_MINOR`.`APP_VER_BUILD`.
 
-For example, if we set the 3 values to 0, 6, and 4, we would end up with a version number of 0.6.4.
+Por ejemplo, si establecemos los 3 valores en 0, 6 y 4, terminaríamos con un número de versión de 0.6.4.
 
-A good start for your project is 0.0.1, so
+Un buen comienzo para su proyecto es 0.0.1, entonces
 
 ```
 #define APP_VER_MAJOR 0
@@ -208,38 +189,38 @@ A good start for your project is 0.0.1, so
 
 ## CryptoNoteConfig.h
 
-Ok, now onto the fun stuff!
+Ok, ahora en las cosas divertidas!
 
-Open up the file `CryptoNoteConfig.h`, located in the `src` folder.
+Abra el archivo `CryptoNoteConfig.h`, ubicado en la carpeta `src`.
 
-Let's start at the top. We'll only focus on the constants which need changing, as some of them are fine to keep as they are.
+Comencemos en la parte superior. Solo nos enfocaremos en las constantes que deben cambiar, ya que algunas de ellas están bien para mantenerse como están.
 
 
 #### `const uint64_t DIFFICULTY_TARGET = 30; // seconds`<br>
 
-This is how fast you want blocks to be. In TurtleCoin, we have blocks on average every 30 seconds.
-If you wanted blocks to be every 2 minutes, you would set this to be:
+Así de rápido quieres que sean los bloques. En TurtleCoin, tenemos bloques en promedio cada 30 segundos. 
+Si desea que los bloques sean cada 2 minutos, debe configurar esto para que sea:
 
 - `const uint64_t DIFFICULTY_TARGET = 120; // seconds`  
 <br>
 
 #### `const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 3914525;`<br/>
 
-This defines what the addresses will start with. In TurtleCoin, this decodes to `TRTL`.
+Esto define con qué comenzarán las direcciones. En TurtleCoin, esto decodifica a `TRTL`.
 
-So how do we get this prefix? We can use this [handy tool](https://cryptonotestarter.org/tools.html).
+Entonces, ¿cómo obtenemos este prefijo? Podemos usar esta [herramienta práctica](https://cryptonotestarter.org/tools.html).
 
 ![Prefix Generator](https://i.imgur.com/F2ZARZ9.png)
 
-Scroll down to the prefix generator, and enter your desired address prefix.
-Note that some characters are disabled, so you may not be able to get the perfect prefix.
-For example, `aPPLE` is allowed, but `APPLE` isn't.
+Desplácese hasta el generador de prefijos e ingrese el prefijo de su dirección deseada.
+Tenga en cuenta que algunos caracteres están desactivados, por lo que es posible que no pueda obtener el prefijo perfecto.
+Por ejemplo, `aPPLE` está permitido, pero `APPLE` no lo esta.
 
-You may note that TRTL's prefix is a number, while the output of this generator is not.
-These values are in hex format, and will automatically be decoded into a number when compiled,
-though you can use any standard hexadecimal to decimal converter to change the prefix into a number if you prefer.
+Puede observar que el prefijo de TRTL es un número, mientras que la salida de este generador no lo es.
+Estos valores están en formato hexadecimal y se decodificarán automáticamente en un número cuando se compilen,
+aunque puede usar cualquier conversor hexadecimal a decimal estándar para cambiar el prefijo a un número si lo prefiere.
 
-So, if we wanted our prefix to be 'aPPLE', we would set this to be:
+Entonces, si quisiéramos que nuestro prefijo fuera 'aPPLE', lo configuraríamos así:
 
 - `const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0x1e1f8cc7;`
 <br>
@@ -247,66 +228,67 @@ So, if we wanted our prefix to be 'aPPLE', we would set this to be:
 
 #### `const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 40;`<br/>
 
-This value defines how many blocks need to be followed in the current chain
-before releasing the reward for mining a block for spending.
+Este valor define cuántos bloques se deben seguir en la cadena actual
+antes de liberar la recompensa por extraer un bloque para gastar.
 
-We would suggest you set this value to be roughly equal to 20 minutes - in
-TurtleCoin's case that's exactly what we have - 40 blocks * 30 seconds = 20
-minutes.
+Sugerimos que establezca este valor para que sea aproximadamente igual a 20 minutos - en
+el caso de TurtleCoin eso es exactamente lo que tenemos - 40 bloques * 30 segundos = 20
+minutos.
 
-If you have a block time of 2 minutes for example, we would set this value
-to 10.
+Si tiene un tiempo de bloqueo de 2 minutos, por ejemplo, estableceríamos este valor
+en 10.
 
 - `const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 10;`<br/>
 
 
 #### `const uint64_t MONEY_SUPPLY = UINT64_C(100000000000000);`<br/>
 
-This line is a pretty significant one. It determines the max supply of coins your cryptocurrency will have.
-In TurtleCoin, this is 1 trillion TRTL, but as previously mentioned, all these values are in *atomic units*,
-so this value also includes the amount after the decimal point.
-Thus, this value is 1 trillion * 100, as TurtleCoin has 2 places after the decimal point.
+Esta línea es bastante significativa. Determina el suministro máximo de monedas que tendrá su criptomoneda.
+En TurtleCoin, esto es 1 billón de TRTL, pero como se mencionó anteriormente, todos estos valores están en *unidades atómicas*,
+por lo que este valor también incluye la cantidad después del punto decimal.
+Por lo tanto, este valor es 1 billón * 100, ya que TurtleCoin tiene 2 lugares después del punto decimal.
 
-Therefore, we suggest you decide how many decimal places your coin has, before filling in this value.
+Por lo tanto, le sugerimos que decida cuántos lugares decimales tiene su moneda, antes de completar este valor.
 
-If you want your coin to have 6 decimal places, and the total supply to be ten thousand (10,000),
-the MONEY_SUPPLY value would be: `10^6 (or 1,000,000) * ten thousand (10,000) = 10000000000`.
+Si usted quiere que su moneda posea 6 decimales, y la emisión total de diez mil (10.000),
+el valor MONEY_SUPPLY sería: `10^6 (or 1,000,000) * ten thousand (10,000) = 10000000000`.
 
-So, we would then pop this value in to give us:
+Entonces, mostraríamos este valor para darnos:
 
 - `const uint64_t MONEY_SUPPLY = UINT64_C(10000000000);`<br/>
 
 
 #### `const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX = 187000;`<br/>
 
-Next up we have the height where we want the first zawy difficulty algorithm to go live.
-The difficulty algorithm determines how hard it is to mine a block based on the speed the previous blocks came in.
+A continuación tenemos la altura en la que queremos que el primer algoritmo de dificultad zawy se active.
+El algoritmo de dificultad determina qué tan difícil es explotar un bloque en función de la velocidad con la que entraron los bloques anteriores.
 
-This difficulty algorithm has had some flaws found with it, and a newer zawy algorithm is now in use.
-I would suggest you set this to `0`, to instantly activate it,
-and then we will switch to the newer zawy algorithm directly at the height of `1`.
+Este algoritmo de dificultad ha encontrado algunos defectos con él, y ahora se usa un algoritmo zawy más nuevo.
+Sugeriría que establezca este valor en `0`, para activarlo instantáneamente,
+y luego cambiaremos al algoritmo zawy más nuevo directamente a la altura de `1`.
 
 - `const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX = 0;`<br/>
 
 
 #### `const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX = 620000;`<br/>
 
-This value sets the height for the newer zawy algorithm that was previously mentioned.
-I would suggest you set this value to `1`, to activate it instantly after the previous algorithm.
-This difficulty algorithm is much more resistant to pulse mining and time warping.
+Este valor establece la altura del algoritmo zawy más nuevo que se mencionó anteriormente.
+Le sugiero que establezca este valor en `1`, para activarlo instantáneamente después del algoritmo anterior.
+Este algoritmo de dificultad es mucho más resistente a la minería de pulsos y al time warping.
 
 - `const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX = 1;`<br/>
 
 
 #### `const unsigned EMISSION_SPEED_FACTOR = 25;`<br/>
 
-This value defines how fast the maximum supply will be emitted.
-A smaller value means the supply will be emitted faster,
-and a higher values means it will take longer for the supply to be released.
-You can again use the website [linked earlier](https://cryptonotestarter.org/tools.html)
-to experiment with different values for the emission and how they will affect how long it takes for the supply to be distributed.
+Este valor define qué tan rápido se emitirá el suministro máximo.
+Un valor más pequeño significa que el suministro se emitirá más rápido,
+y un valor más alto significa que tomará más tiempo para que se libere el suministro.
+Puede volver a utilizar el sitio web [vinculado anteriormente](https://cryptonotestarter.org/tools.html)
+para experimentar con diferentes valores de emisión y cómo afectarán el tiempo que tarda en distribuirse 
+el suministro.
 
-If we wanted a fast emission, we could set this to a value like 21.
+Si quisiéramos una emisión rápida, podríamos establecer esto en un valor como 21.
 
 
 - `const unsigned EMISSION_SPEED_FACTOR = 21;`<br/>
@@ -314,25 +296,26 @@ If we wanted a fast emission, we could set this to a value like 21.
 
 #### `const size_t CRYPTONOTE_DISPLAY_DECIMAL_POINT = 2;`<br/>
 
-This value defines how many numbers there are after the decimal point in your currency.
-In TurtleCoin, this value is 2, so we have amounts like 10.23 TRTL.
-If we set this to 6, we would have an amount like 10.234567 TRTL instead.
-Remember, as previously mentioned, this affects your money supply and other parameters which depend upon atomic units.
+Este valor define cuántos números hay después del punto decimal en su moneda.
+En TurtleCoin, este valor es 2, por lo que tenemos cantidades como 10.23 TRTL.
+Si establecemos esto en 6, tendríamos una cantidad como 10.234567 TRTL en su lugar. 
+Recuerde, como se mencionó anteriormente, esto afecta su oferta de dinero y otros parámetros que dependen de las unidades atómicas.
 
 - `const size_t CRYPTONOTE_DISPLAY_DECIMAL_POINT = 6;`<br/>
 
 
 #### `const uint64_t MINIMUM_FEE = UINT64_C(10);`<br/>
 
-This value defines what the minimum fee a user must spend to send a transaction is.
-Note this doesn't apply to fusion transactions.
+Este valor define cuál es la tarifa mínima que un usuario debe gastar para enviar una transacción.
+Tenga en cuenta que esto no se aplica a las transacciones de fusión.
 
-A lower value allows cheaper transactions, but can mean your network can be spammed by lots of small transactions.
+Un valor más bajo permite transacciones más baratas, pero puede significar que su red puede recibir 
+correo no deseado con muchas pequeñas transacciones.
 
-A happy medium is generally desired, though you could optionally raise this at a later date.
+Por lo general, se desea un punto medio, aunque opcionalmente podría plantearse en una fecha posterior.
 
-This value is defined again in *atomic units*,
-so multiply your desired minimum fee by 10 * the number of numbers after the decimal point in your coin.
+Este valor se define nuevamente en *unidades atómicas*,
+por lo tanto, multiplique su tarifa mínima deseada por 10 * la cantidad de números después del punto decimal en su moneda.
 
 
 - `const uint64_t MINIMUM_FEE = UINT64_C(1000);`<br/>
@@ -340,7 +323,7 @@ so multiply your desired minimum fee by 10 * the number of numbers after the dec
 
 #### `const uint64_t MINIMUM_MIXIN_V1 = 0;`<br/>
 
-This section will cover all of these, because they are all related:
+Esta sección cubrirá todos estos, porque todos están relacionados:
 
 ```
 const uint64_t MINIMUM_MIXIN_V1                              = 0;
@@ -354,17 +337,17 @@ const uint32_t MIXIN_LIMITS_V2_HEIGHT                        = 620000;
 const uint64_t DEFAULT_MIXIN = MINIMUM_MIXIN_V2;
 ```
 
-These set the mixin values that are allowed on the network, and at what height they are applied.
-If you want a private coin from the get-go,
-I would suggest setting MIXIN_LIMITS_V1_HEIGHT to 0, and MIXIN_LIMITS_V2_HEIGHT to 1.
-Then, set the MINIMUM_MIXIN_V1/V2 and MAXIMUM_MIXIN_V1/V2 values as appropriate.
+Estos establecen los valores mixin que están permitidos en la red, y en qué altura se aplican.
+Si quieres una moneda privada desde el principio,
+Te sugiero que establezcas MIXIN_LIMITS_V1_HEIGHT en 0 y MIXIN_LIMITS_V2_HEIGHT en 1.
+Luego, establece los valores MINIMUM_MIXIN_V1 / V2 y MAXIMUM_MIXIN_V1 / V2 según corresponda.
 
-Don't set a value that is *too* high, otherwise your network will have difficulty processing transactions.
-You shouldn't set the minimum anymore than 100, and sane values would be somewhere in the 0 - 30 range.
+No establezca un valor que sea *demasiado* alto, de lo contrario, su red tendrá dificultades para procesar las transacciones.
+No debe establecer el mínimo más de 100, y los valores en su sano estarán en algún lugar en el rango de 0 a 30.
 
-`DEFAULT_MIXIN` is used to set the mixin value used in zedwallet, so set it to a sane value.
+`DEFAULT_MIXIN` se usa para establecer el valor de mixin usado en zedwallet, por lo tanto ajústelo a un valor razonable.
 
-Make sure your minimum is less than or equal to your maximum!
+¡Asegúrate de que tu mínimo sea menor o igual a tu máximo!
 
 ```
 const uint64_t MINIMUM_MIXIN_V1                              = 0;
@@ -383,7 +366,7 @@ const uint64_t DEFAULT_MIXIN = MINIMUM_MIXIN_V2;
 #### `const uint64_t DEFAULT_DUST_THRESHOLD  = UINT64_C(10);`<br/>
 
 
-This section will cover all of these, because they are all related:
+Esta sección cubrirá todos estos, porque todos están relacionados:
 
 ```
 const uint64_t DEFAULT_DUST_THRESHOLD = UINT64_C(10);
@@ -392,12 +375,12 @@ const uint64_t DEFAULT_DUST_THRESHOLD_V2 = UINT64_C(0);
 const uint32_t DUST_THRESHOLD_V2_HEIGHT = MIXIN_LIMITS_V2_HEIGHT;
 ```
 
-The dust threshold determines the smallest amount that can be sent in a transaction,
-and can lead to lots of tiny amounts accumulating in your wallet which cannot be sent.
+El umbral de polvo determina la cantidad más pequeña que se puede enviar en una transacción,
+y puede generar una gran cantidad de pequeñas cantidades que se acumulan en su billetera y que no pueden enviarse.
 
-Setting the dust threshold to zero prevents this, but has a side effect of making transactions slightly bigger.
+Establecer el umbral de polvo a cero evita esto, pero tiene un efecto secundario de hacer las transacciones un poco más grandes.
 
-I suggest setting DUST_THRESHOLD_V2_HEIGHT to 0, to make small amounts always spendable.
+Sugiero configurar DUST_THRESHOLD_V2_HEIGHT en 0, para hacer pequeñas cantidades siempre gastables.
 
 - `const uint32_t DUST_THRESHOLD_V2_HEIGHT = 0;`<br/>
 
@@ -405,17 +388,17 @@ I suggest setting DUST_THRESHOLD_V2_HEIGHT to 0, to make small amounts always sp
 #### `const uint32_t UPGRADE_HEIGHT_V4 = 350000;`<br/>
 
 
-This value determines when the mining algorithm will transition to Original CryptoNight,
-also known as CN v0, to CryptoNight Lite v1, also known as CryptoNight Lite v7.
+Este valor determina cuándo el algoritmo de minería pasará a Original CryptoNight,
+también conocido como CN v0, a CryptoNight Lite v1, también conocido como CryptoNight Lite v7.
 
-Original CN currently allows ASICs on the network, so we suggest you set this upgrade height to 3,
-to near instantly switch to the ASIC resistant CryptoNight Lite v1.
+Original CN actualmente permite los ASIC en la red, por lo que le sugerimos que configure esta altura de actualización en 3,
+para cambiar casi instantáneamente al resistente de ASIC, CryptoNight Lite v1.
 
-However, if you would prefer to stay on original CryptoNight,
-you can either find where this variable is used and patch it out, or,
-you can set the upgrade height to `std::numeric_limits<uint32_t>::max()`
+Sin embargo, si prefiere permanecer en CryptoNight original,
+puede encontrar dónde se usa esta variable y aplicar un parche, o bien,
+puede configurar la altura de actualización como `std::numeric_limits<uint32_t>::max()`
 
-(You will probably need to add `#include <limits>` to the top of the file if you choose this option)
+(Es probable que necesites agregar `#include <limits>` a la parte superior del archivo si eliges esta opción)
 
 - `const uint32_t UPGRADE_HEIGHT_V4 = 3; // Upgrade height for CN-Lite Variant 1 switch.`<br/>
 
@@ -424,13 +407,14 @@ you can set the upgrade height to `std::numeric_limits<uint32_t>::max()`
 
 #### `const uint64_t FORK_HEIGHTS[] =`<br/>
 
-This variable is used by the `status` command in zedwallet and TurtleCoind to notify users when a fork is upcoming,
-or their software is outdated. We suggest you set up some regular forks ahead of time,
-if you then need to update the software this will let users know when to expect this.
+Esta variable es utilizada por el comando `status` en zedwallet y TurtleCoind para notificar a los usuarios cuando 
+se aproxima una bifurcación, o su software está desactualizado.
+Le sugerimos que configure algunas bifurcaciones con regularidad,
+si necesita actualizar el software para que los usuarios puedan saber cuándo pueden esperarlo.
 
-If you wish to not pre-prepare any forks, you can empty the list.
+Si no desea pre-preparar ninguna bifurcación, puede vaciar la lista.
 
-This will set the status command to notify of a fork at 100k and 300k blocks.
+Esto configurará el comando de estado para notificar una bifurcación a 100k y 300k bloques.
 
 - ```
   const uint64_t FORK_HEIGHTS[] =
@@ -445,13 +429,13 @@ This will set the status command to notify of a fork at 100k and 300k blocks.
 
 #### `const uint8_t CURRENT_FORK_INDEX = FORK_HEIGHTS_SIZE == 0 ? 0 : 3;`<br/>
 
-This value relates to the previous FORK_HEIGHTS array.
-It determines which fork heights the software supports. (This value is zero-indexed).
-For example, if our `FORK_HEIGHTS = {100, 200, 300}` and `CURRENT_FORK_INDEX = 1`
-then the software will support the fork at FORK_HEIGHTS[1] - which is the fork at 200 blocks.
+Este valor se relaciona con la matriz anterior FORK_HEIGHTS.
+Determina qué alturas de bifurcación admite el software. (Este valor tiene índice cero).
+Por ejemplo, si nuestro `FORK_HEIGHTS = {100, 200, 300}` and `CURRENT_FORK_INDEX = 1`
+luego el soporte de la bifurcación en FORK_HEIGHTS [1] - que es la bifurcación en 200 bloques.
 
-We have a ternary to check FORK_HEIGHTS_SIZE so if you wish to empty the FORK_HEIGHTS array,
-you don't need to set a CURRENT_FORK_INDEX.
+Tenemos un ternario para verificar FORK_HEIGHTS_SIZE, por lo tanto, si desea vaciar la matriz FORK_HEIGHTS,
+no necesita establecer un CURRENT_FORK_INDEX.
 
 - `const uint8_t CURRENT_FORK_INDEX = FORK_HEIGHTS_SIZE == 0 ? 0 : 1;`<br/>
 
@@ -460,7 +444,7 @@ you don't need to set a CURRENT_FORK_INDEX.
 
 #### `const char CRYPTONOTE_NAME[] = "TurtleCoin";`<br/>
 
-This is an obvious one. It's the name of your coin!
+Esto es obvio. Es el nombre de tu moneda!
 
 - `const char CRYPTONOTE_NAME[] = "SuperCoolCoin";`<br/>
 
@@ -470,15 +454,14 @@ This is an obvious one. It's the name of your coin!
 
 #### `const int P2P_DEFAULT_PORT` and `const int RPC_DEFAULT_PORT`
 
-These values define the ports that are used by the daemon to communicate.
-There is no real issue with using the same values as the TurtleCoin software,
-but if you are running both a TurtleCoin daemon and your own daemon, you would
-have to change the port one uses, as they will both need control over the
-port.
+Estos valores definen los puertos que usa el servicio para comunicarse.
+No existe un problema real con el uso de los mismos valores que el software TurtleCoin,
+pero si está ejecutando tanto un servicio TurtleCoin como su propio servicio, debería 
+cambiar el puerto que utiliza, ya que ambos necesitarán control sobre el puerto.
 
-Ports can be in the range of 0 - 65535, however using ports in the 0 - 1023
-range is not recommended, as on unix systems a program will require administrative
-permissions to use these ports.
+Los puertos pueden estar en el rango de 0 - 65535, sin embargo, no se recomienda el uso de puertos en 
+el rango 0 - 1023, ya que en los sistemas Unix un programa requerirá permisos administrativos para usar
+estos puertos.
 
 - `const int P2P_DEFAULT_PORT = 10101;`
 - `const int RPC_DEFAULT_PORT = 10102;`
@@ -489,11 +472,11 @@ permissions to use these ports.
 
 #### `const static boost::uuids::uuid CRYPTONOTE_NETWORK =`
 
-This value sets the 'Network ID' of your coin. This ensures your network
-will not respond to network connections from other coins, such as TurtleCoin.
+Este valor establece la 'ID de red' de su moneda. Esto garantiza que su red
+no responderá a las conexiones de red de otras monedas, como TurtleCoin.
 
-This value is using hex values, which should be in the form 0x?? where `?` is
-a valid hex value (0-9, a-f).
+Este valor está usando valores hexadecimales, que deberían estar en la forma 0x?? donde `?` es
+un valor hexadecimal válido (0-9, a-f).
 
 - ```
   const static boost::uuids::uuid CRYPTONOTE_NETWORK =
@@ -507,11 +490,11 @@ a valid hex value (0-9, a-f).
 
 #### `const char* const SEED_NODES[] = {`<br/>
 
-This variable defines the seed nodes daemons will connect to on the very first launch,
-before they are aware of any peers. You will need to run these on different servers,
-to bootstrap other nodes. Once your coin is established,
-it might be a good idea to ask other trusted community members to host some seed nodes,
-to help decentralize your coin.
+Esta variable define los nodos de inicialización a los que los servicios se conectarán desde el primer lanzamiento,
+antes de que se den cuenta de que hay pares. Tendrá que ejecutar estos en diferentes servidores 
+para arrancar otros nodos. Una vez que se establezca su moneda,
+podría ser una buena idea pedirle a otros miembros de la comunidad de confianza que alojen algunos nodos semilla,
+para ayudar a descentralizar su moneda.
 
 - ```
   const char* const SEED_NODES[] =
@@ -525,72 +508,72 @@ to help decentralize your coin.
 
 
 
-## Premine
+## Pre-minado
 
-You may have noticed we skipped
+Es posible que hayas notado que nos salteamos
 
 ```
 const uint64_t GENESIS_BLOCK_REWARD = UINT64_C(0);
 ```
 
-and
+y
 
 ```
 const char GENESIS_COINBASE_TX_HEX[] = "010a01ff000188f3b501029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210142694232c5b04151d9e4c27d31ec7a68ea568b19488cfcb422659a07a0e44dd5";
 ```
 
-I wanted to put these in a different section,
-because generating a premine requires a tad more effort than the previous config tweaks.
+Quería poner estos en una sección diferente,
+porque la generación de un preminismo requiere un poco más de esfuerzo que los ajustes de configuración anteriores.
 
-To start with, put your premine amount in `const uint64_t GENESIS_BLOCK_REWARD = UINT64_C(0);`,
+Para empezar, poner su cantidad en premine `const uint64_t GENESIS_BLOCK_REWARD = UINT64_C(0);`,
 
-e.g.
+Por ejemplo:
 
 - `const uint64_t GENESIS_BLOCK_REWARD = UINT64_C(100);`
 
-As always, this value is in *atomic units*. The above code would premine 1 TRTL, assuming 2 decimal places are being used.
+Como siempre, este valor está en *unidades atómicas*. El código anterior precedería a 1 TRTL, asumiendo que se están usando 2 decimales.
 
-Next, compile your code.
+A continuación, compila tu código.
 
-Once it has compiled, use zedwallet to generate an address. Don't worry about running the daemon, we don't need that yet.
+Una vez que se haya compilado, use zedwallet para generar una dirección. No se preocupe por ejecutar el servicio, no lo necesitamos aún.
 
-Save this address somewhere, and make sure to save your wallet keys somewhere safe as well.
+Guarde esta dirección en alguna parte, y asegúrese de guardar sus llaves de billetera en un lugar seguro también.
 
-Now, take this address, and run your daemon with the following arguments:
+Ahora, tome esta dirección y ejecute su servicio con los siguientes argumentos:
 
 `--print-genesis-tx --genesis-block-reward-address <premine wallet address>`
 
-Replacing <premine wallet address> with the address you just generated.
+Reemplazando con la dirección que acaba de generar.
 
-For example:
+Por ejemplo:
 
 ```
 TurtleCoind --print-genesis-tx --genesis-block-reward-address TRTLv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW
 ```
 
-This will print out a long hash. Take this hash, and replace the value of
+Esto imprimirá un hash largo. Toma este hash y reemplaza el valor de
 
-`const char GENESIS_COINBASE_TX_HEX[] =` with this value.
+`const char GENESIS_COINBASE_TX_HEX[] =` con este valor.
 
 - ```
   const char GENESIS_COINBASE_TX_HEX[] = "012801ff000100023f6cd7a559d3b5d88fc6396a7a261c70a5212608bdeeb73ac53ff5dad157326221015bf857a5c95d6066c23800a6563e79acc85d450d7563cf68995d1c5c92b1567a";
   ```
 
-Now, recompile your code, and set up your seed nodes.
-Once you start mining, the premine should appear in the wallet you previously created.
-Make sure you have your private keys to restore this wallet.
+Ahora, recompile su código y configure sus nodos semilla.
+Una vez que comience a extraer, lo preminado debería aparecer en la billetera que creó anteriormente.
+Asegúrate de tener tus llaves privadas para restaurar esta billetera.
 
 ## WalletConfig.h
 
-Next up to modify is WalletConfig.h, located in `src/zedwallet/WalletConfig.h`
+El siguiente paso para modificar es WalletConfig.h, ubicado en `src/zedwallet/WalletConfig.h`
 
-These fields are all pretty well documented already, but we'll go over them anyway.<br/>
+Estos campos ya están bastante bien documentados, pero los revisaremos de todos modos.<br/>
 
 #### `const std::string addressPrefix = "TRTL";`<br/>
 
-This value is used to check inputted addresses are correct.
-This value corresponds to the value you chose for your address prefix earlier,
-in `const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX =`
+Este valor se usa para verificar que las direcciones ingresadas sean correctas.
+Este valor corresponde al valor que eligió para su prefijo de dirección anteriormente,
+en `const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX =`
 
 - `const std::string addressPrefix = "aPPLE";`<br/>
 
@@ -599,8 +582,8 @@ in `const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX =`
 
 #### `const std::string ticker = "TRTL";`<br/>
 
-This refers to the 'short name' your coin has, which is often used as a ticker on exchanges.
-For example, in TurtleCoin this is TRTL, in Monero this is XMR, and in Bitcoin this is BTC.
+Esto se refiere al "nombre corto" que tiene su moneda, que a menudo se utiliza como un ticker en las casas de cambio. 
+Por ejemplo, en TurtleCoin esto es TRTL, en Monero esto es XMR, y en Bitcoin esto es BTC.
 
 - `const std::string ticker = "APPLE";`<br/>
 
@@ -609,9 +592,9 @@ For example, in TurtleCoin this is TRTL, in Monero this is XMR, and in Bitcoin t
 
 #### `const std::string daemonName = "TurtleCoind";`<br/>
 
-This variable determines what the name of your daemon is.
-We'll talk about changing the names of the executables generated in the `CmakeLists.txt` section.
-We'll skip mentioning `walletName`, and `walletdName` as these both follow the same format.
+Esta variable determina cuál es el nombre de tu servicio.
+Hablaremos sobre cambiar los nombres de los ejecutables generados en la sección `CmakeLists.txt`.
+Vamos a omitir mencionar `walletName`, y `walletdName` ya que ambos siguen el mismo formato.
 
 - `const std::string daemonName = "AppleCoind";`<br/>
 
@@ -619,8 +602,7 @@ We'll skip mentioning `walletName`, and `walletdName` as these both follow the s
 
 #### `const std::string contactLink = "http://chat.turtlecoin.lol";`<br/>
 
-This value is used to let the user know where they can get support if their wallet gets stuck whilst syncing.
-In our case, this is the TurtleCoin discord. Maybe you have a forum or an IRC chat instead?
+Este valor se usa para informar al usuario dónde pueden obtener asistencia si su billetera se bloquea durante la sincronización. En nuestro caso, esta es la discordia TurtleCoin. ¿Quizás tengas un foro o un chat de IRC?
 
 - `const std::string contactLink = "https://applecoin.com/livechat"`<br/>
 
@@ -629,8 +611,8 @@ In our case, this is the TurtleCoin discord. Maybe you have a forum or an IRC ch
 
 #### `const long unsigned int standardAddressLength = 99;`
 
-This value is used to verify inputted addresses are correct.
-You can easily get this value by compiling, generating an address with zedwallet, and checking how long it is.
+Este valor se usa para verificar que las direcciones ingresadas sean correctas.
+Puede obtener este valor fácilmente compilando, generando una dirección con zedwallet y verificando cuánto tiempo es.
 
 
 - `const long unsigned int addressLength = 100;`<br/>
@@ -641,15 +623,15 @@ You can easily get this value by compiling, generating an address with zedwallet
 
 #### `const long unsigned int integratedAddressLength = 236;`<br/>
 
-This value is used to verify inputted addresses are correct.
-An integrated address is an address which also contains an embedded payment ID,
-to alleviate users from having to remember to supply one with the transaction.
+Este valor se usa para verificar que las direcciones ingresadas sean correctas.
+Una dirección integrada es una dirección que también contiene una identificación de pago integrada,
+para evitar que los usuarios tengan que recordar proporcionar una con la transacción.
 
-You can easily get this value by compiling, generating an address with zedwallet,
-then using the `make_integrated_address` command, and checking how long it is.
+Puede obtener este valor fácilmente compilando, generando una dirección con zedwallet,
+luego usando el comando `make_integrated_address`, y verificando cuánto tiempo es.
 
-You can use your own address with this command, and any payment ID.
-If you don't know how to generate a payment ID, here's a random one for you to use.
+Puede usar su propia dirección con este comando y cualquier ID de pago.
+Si no sabe cómo generar una identificación de pago, aquí hay una al azar para que la use.
 
 `8eba031ca60bf9b9f680309819bddf071e619c53ff71766e48e365812e229452`
 
@@ -659,8 +641,8 @@ If you don't know how to generate a payment ID, here's a random one for you to u
 
 #### `const uint64_t defaultMixin = CryptoNote::parameters::DEFAULT_MIXIN;`<br/>
 
-This sets the mixin value to be used with transactions.
-Make sure this is in the bounds you set earlier, with `MINIMUM_MIXIN_V1/V2` and `MAXIMUM_MIXIN_V1/V2`.
+Esto establece el valor de mixin para ser utilizado con las transacciones.
+Asegúrate de que esté dentro de los límites establecidos anteriormente, con `MINIMUM_MIXIN_V1/V2` y `MAXIMUM_MIXIN_V1/V2`.
 
 
 - `const uint64_t defaultMixin = 7;`<br/>
@@ -670,15 +652,16 @@ Make sure this is in the bounds you set earlier, with `MINIMUM_MIXIN_V1/V2` and 
 
 #### `const uint64_t defaultFee = CryptoNote::parameters::MINIMUM_FEE`<br/>
 
-If you want to set a higher default fee, perhaps to make transactions go through quicker, you can do that here.
-As usual, this is in *atomic units*.
-You may also wish to change `const uint64_t minimumFee = CryptoNote::parameters::MINIMUM_FEE;`
-to prevent users from sending a lower fee than desired.
+Si desea establecer una tarifa predeterminada más alta, tal vez para que las transacciones se realicen más rápido, puede
+hacerlo aquí.
+Como de costumbre, esto es en *unidades atómicas*.
+También es posible que desee cambiar `const uint64_t minimumFee = CryptoNote::parameters::MINIMUM_FEE;`
+para evitar que los usuarios envíen una tarifa más baja de lo deseado.
 
-Remember this limit is only enforced by zedwallet, and the user can change the limit and recompile,
-or use a different wallet program.
-If you want to enforce higher fees across the network,
-change the value of `CryptoNote::parameters::MINIMUM_FEE` in `CryptoNoteConfig.h`.
+Recuerde que este límite solo se aplica con zedwallet, y el usuario puede cambiar el límite y volver a compilar,
+o utilizar un programa de billetera diferente.
+Si desea aplicar tarifas más altas a través de la red,
+cambie el valor de `CryptoNote::parameters::MINIMUM_FEE` en `CryptoNoteConfig.h`.
 
 
 - `const uint64_t defaultFee = 100;`<br/>
@@ -688,24 +671,25 @@ change the value of `CryptoNote::parameters::MINIMUM_FEE` in `CryptoNoteConfig.h
 
 #### `const bool mixinZeroDisabled = true;`<br/>
 
-Is a mixin of zero allowed on the network? If at some point a mixin of zero will be disabled,
-but that point is at a later fork, still set this to `true`.
+¿Se permite un mixin de cero en la red? Si en algún punto se desactiva una mixin de cero,
+pero ese punto está en una bifurcación posterior, aún establezca esto en `true`.
 
-If you set this to true, you can change the value of
+Si establece esto en verdadero, puede cambiar el valor de
 
 ```
 const uint64_t mixinZeroDisabledHeight = CryptoNote::parameters::MIXIN_LIMITS_V2_HEIGHT;
 ```
 
-To determine what block height a mixin of zero gets disabled.
-In TurtleCoin's case, this was disabled at block 620k,
-but being a new network, you have the advantage of being able to disable a mixin of zero much earlier,
-or even from the launch of your network.
+Para determinar a qué altura de bloque se desactiva una mixin de cero.
+En el caso de TurtleCoin, esto se deshabilitó en el bloque 620k,
+pero al ser una red nueva, tiene la ventaja de poder deshabilitar una mezcla de cero mucho antes,
+o incluso desde el lanzamiento de su red.
 
-Again, this is only a client-side limitation.
-Ensure you have set your mixin limits in `CryptoNoteConfig.h` so that the network will enforce the mixin limits. Any ideas you always want to happen, need to be done at the network level, else custom daemons/wallets etc. can be written to avoid those ideas/limits.
+De nuevo, esto es solo una limitación del lado del cliente.
+Asegúrese de haber establecido sus límites de mixin `CryptoNoteConfig.h` para que la red aplique los límites de mixin. 
+Cualquier idea que siempre desee que suceda, debe hacerse a nivel de red; de lo contrario, se pueden escribir servicios / billeteras, etc. para evitar esas ideas / límites.
 
-If you want to allow zero mixins, then `mixinZeroDisabledHeight` does nothing.
+Si quiere permitir cero mixins, entonces `mixinZeroDisabledHeight` no hace nada.
 
 - ```
   const bool mixinZeroDisabled = true;
@@ -718,53 +702,52 @@ If you want to allow zero mixins, then `mixinZeroDisabledHeight` does nothing.
 
 
 
-## Setup
+## Preparado
 
-Ok, so you've finished tweaking all the configs, and now you're ready to go!
-To start with, you will need to compile your code. See the compiling section below.
+Ok, entonces terminaste de ajustar todas las configuraciones y ¡ya estás listo!
+Para empezar, deberá compilar su código. Vea la sección de compilación a continuación.
 
-Make sure you've got the IPs of your seed nodes filled in in the config,
-3 daemons need to be connected to the network for your coin to work.
+Asegúrate de que tienes las direcciones IP de tus nodos semilla en la configuración,
+3 servicios deben estar conectados a la red para que funcione tu moneda.
 
-Once you've compiled the code on all your machines,
-you can start up your daemon.
-If you are unable to connect to the seed nodes,
-you will see something like `Failed to connect to seed nodes` in your daemon output.
+Una vez que haya compilado el código en todas sus máquinas,
+puede iniciar su servicio.
+Si no puede conectarse a los nodos de semilla,
+verá algo parecido a `Failed to connect to seed nodes` a la salida de su servicio.
 
-Ensure your firewalls are not preventing the daemon connection,
-you may need to open the p2p and RPC ports for the daemon, which by default are 11898 and 11897.
+Asegúrese de que sus firewalls no impidan la conexión del servicio,
+puede que necesite abrir los puertos p2p y RPC para el servicio, que por defecto son 11898 y 11897.
 
-If your daemons are now talking to each other, you can start mining, and launch your blockchain!
+Si tus servicios ahora están hablando entre ellos, ¡puedes comenzar a extraer, y lanzar tu blockchain!
 
-You can use the solo mining `miner` executable for this.
-From a command prompt or terminal, launch the miner like so: `miner --threads 1 --log-level 3 --address <your address>`,
-replacing <your address> with an address you have generated and control.
+Puede usar el `miner` ejecutable de minería individual para esto.
+FDesde un indicador de comando o terminal, inicie el minero de esa manera: `miner --threads 1 --log-level 3 --address <your address>`,
+reemplazando <your address> con una dirección que haya generado y controlado.
 
-You can, of course, increase the threads value, however as you are the only one currently mining on the network,
-there is not much point in that yet!
+Por supuesto, puede aumentar el valor de los subprocesos, sin embargo, dado que usted es el único que está minando actualmente en la red, ¡aún no tiene mucho sentido!
 
-E.g.
+Por ejemplo:
 
 ```
 ./miner --threads 8 --log-level 3 --address TRTLuyTvsJZjAsbtgbYmZeV1pb43dXqcv1jNdYNwokv8GUa1ZbYzivzg2gEgXeAfUqJF12APf3Rq89UneaQKiZ1nGW1vYqkGb8Y
 ```
 
-If you've done this correctly, you should see output like this:
-`Block successfully submitted, hash xxxx`, and in your daemon window,
-you should see the `New block detected` value increasing in height.
+Si ha hecho esto correctamente, debería ver resultados como este:
+`Block successfully submitted, hash xxxx`, y en su ventana de servicio, debería ver el
+debería ver el valor `New block detected` aumentando en altura.
 
-Congratulations!
+¡Felicidades!
 
-## Compiling
+## Compilando
 
-You can always find the latest instructions on how to compile TurtleCoin on our [GitHub](https://github.com/turtlecoin/turtlecoin#how-to-compile).
+Siempre puede encontrar las últimas instrucciones sobre cómo compilar TurtleCoin en nuestro [GitHub](https://github.com/turtlecoin/turtlecoin#how-to-compile).
 
 
-## Support, Questions?
+## Soporte, ¿Preguntas?
 
-Something not clear? Head over to our [Discord](http://chat.turtlecoin.lol) and ask in the #help channel,
-and hopefully, someone will be able to help you out.
+Algo no está claro? Dirígete a nuestro [Discord](http://chat.turtlecoin.lol) y pregunta en el canal #help,
+y con suerte, alguien podrá ayudarte.
 
-Let us know if something is wrong with this guide, or missing, so we can update it and make it better!
+Háganos saber si algo está mal con esta guía, o falta, para que podamos actualizarla y mejorarla.
 
-Good luck with your new coin!
+¡Buena suerte con tu nueva moneda!

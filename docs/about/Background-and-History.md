@@ -1,21 +1,21 @@
-# How and Why was TurtleCoin Created?
+# ¿Cómo y por qué se creó TurtleCoin?
 
-TurtleCoin was created on December 9th, 2017 by RockSteady and Bebop.
+TurtleCoin fue creado el 9 de diciembre de 2017 por RockSteady y Bebop.
 
-It was born from the idea that there were too many projects out there, which despite having no real product, were bringing in tons of funding. 
+Nació de la idea de que había demasiados proyectos por ahí, que a pesar de no tener ningún producto real, estaban trayendo toneladas de financiación. 
 
-TurtleCoin decided to do it the opposite way.
-It's goal is to create a fun project which is easy to use and then let it grow on its own. 
-We have a strong belief in our no-funding strategy; if we make a cool product, the value will create itself.
+TurtleCoin decidió hacerlo de la manera opuesta.
+Su objetivo es crear un proyecto divertido que sea fácil de usar y luego dejarlo crecer por sí mismo. 
+Creemos firmemente en nuestra estrategia de no financiación; si hacemos un producto genial, el valor se creará solo.
 
-TurtleCoin was created with **No** Pre-Mine, **No** ICO, and **No** Shenanigans.
+TurtleCoin se creó **SIN** Pre-minado, **SIN** ICO, y **SIN** Engaños.
 
-# Our Background
+# Nuestra trayectoria
 
-Most of us are full-time developers on other projects, and this is our way to give back to the community with something fun.
+La mayoría de nosotros somos desarrolladores a tiempo completo en otros proyectos, y esta es nuestra manera de devolver a la comunidad algo divertido.
 
-We also have a wide range of people in the community, people from all walks of life that contribute to the community one way or another. 
+También tenemos una amplia gama de personas en la comunidad, personas de todos los ámbitos de la vida que contribuyen a la comunidad de una forma u otra. 
 
-Our community and dev team are growing by the week and this is what makes the TurtleCoin community so great!
+¡Nuestro equipo de desarrollo y comunidad está creciendo cada semana y esto es lo que hace que la comunidad TurtleCoin sea tan grandiosa!
 
 

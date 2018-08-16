@@ -1,39 +1,39 @@
-# About TurtleCoin
+# Acerca de TurtleCoin
 
-TurtleCoin is a fast, easy and private cryptocurrency which allows you to send money to friends and businesses.
+TurtleCoin es una criptomoneda rápida, fácil y privada que le permite enviar dinero a amigos y empresas.
 
-One of TurtleCoin's main goals is to make things as simple and as accessible as possible for everyday people, creating a cryptocurrency which is inviting, fun and friendly.
+Uno de los principales objetivos de TurtleCoin es hacer las cosas lo más simples y accesibles posible para la gente común, creando una criptomoneda que sea acogedora, divertida y amigable.
 
-TurtleCoin's code is forked from the Bytecoin code, and it has majorly the same privacy features you'll find in Monero and Aeon. Every transaction is private unless you choose to make it public.
+El código de TurtleCoin se bifurca del código de Bytecoin y tiene, en gran medida, las mismas características de privacidad que encontrará en Monero y Aeon. Todas las transacciones son privadas a menos que elija hacerlo público.
 
-Some of the main features of TurtleCoin include:
+Algunas de las principales características de TurtleCoin incluyen:
 
-- On-chain privacy
+- Privacidad en la cadena
 
-- Only two decimal places
+- Solo dos decimales
 
-- Fast transactions
+- Transacciones rápidas
 
-- User-centric developers
+- Desarrolladores centrados en el usuario
 
-- Easy to mine
+- Fácil de minar
 
-- Easy to use
+- Fácil de usar
 
-- Amazing community
+- Comunidad increíble
 
 
 
-To learn more about us, check out our other various articles, describing:
+Para obtener más información sobre nosotros, consulte nuestros otros artículos, que describen:
 
-- [Our Background and History](Background-and-History)
+- [Nuestros Antecedentes e Historia](Background-and-History)
 
-- [Our Community](Community)
+- [Nuestra comunidad](Community)
 
-- [How to Contribute](Contributing)
+- [Cómo contribuir](Contributing)
 
-- [its Technical Data](Technical-Data)
+- [Sus datos técnicos](Technical-Data)
 
-- [Our Timeline](Timeline) 
+- [Nuestra línea de tiempo](Timeline) 
 
-We recommend you take some time off and read them, to get acquainted with TurtleCoin!
+¡Le recomendamos tomarse un tiempo libre y leerlos para familiarizarse con TurtleCoin!
