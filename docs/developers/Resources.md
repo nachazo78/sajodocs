@@ -20,7 +20,7 @@ Ver la [documentación de la API](https://api-docs.turtlecoin.lol/) para su uso.
 * [Go](https://www.github.com/turtlecoin/turtlecoin-rpc-go): Un contenedor de Golang para la API TurtleCoin RPC. Este proyecto facilita el envío de solicitudes a un servidor RPC en particular y devuelve una respuesta clara sin una terminación abrupta.
 * [Python](https://github.com/turtlecoin/turtlecoin-walletd-rpc-python): un contenedor Python para la interfaz TurtleCoind y Walletd RPC
 
-Ver la [documentación de la API](https://api-docs.turtlecoin.lol/) para el uso.
+Ver la [documentación de la API](https://api-docs.turtlecoin.lol/) para su uso.
 
 ## Bibliotecas
 
