@@ -1,20 +1,20 @@
-# Technical Data
+# Datos técnicos
 
-Name: TurtleCoin  
+Nombre: TurtleCoin 
 
-Algorithm: [CryptoNote](https://cryptonote.org)
+Algoritmo: [CryptoNote](https://cryptonote.org)
 
-* ASIC resistant
-* Enhanced Privacy
-* Elastic Blocks
-* Fair Mining
+* Protección contra ASIC
+* Privacidad mejorada
+* Bloques elásticos
+* Minería justa
 
-Block time: `30` second target block time - made by and for miners.  
+Tiempo de bloque objetivo: `30` segundos - hecho por y para mineros.
 
-Decimal places: Two decimal places, like USD  
+Lugares decimales: dos decimales, como el dólar (USD)
 
-Supply Cap: `1,000,000,000,000`  
+Emisión total: `1,000,000,000,000`  
 
-Address Prefix: `TRTL`   
+Prefijo de dirección: `TRTL`   
 
-Currency Code: `TRTL`
+Código de moneda: `TRTL`
