@@ -1,19 +1,19 @@
-# How to Bootstrap the TurtleCoin Blockchain
+# Cómo aplicar Bootstrap a la cadena de bloques de TurtleCoin
 
-This guide will help you install a recent copy of the blockchain. This should significantly speed up the task of getting the blockchain synced up so you can use your wallet.
+Esta guía te ayudará a instalar una copia reciente de la cadena de bloques. Esto debería acelerar significativamente la tarea de sincronizar el cadena de bloques para que pueda usar su billetera.
 
 ## Windows:
-1. Make sure `TurtleCoind.exe`, `walletd.exe`, and/or the GUI wallet are not running.
+1. Asegúrese de que `TurtleCoind.exe`, `walletd.exe`, y / o la billetera GUI no se estén ejecutando.
 
-2. Open File Explorer and type `%APPDATA%\TurtleCoin` and hit enter.
+2. Abra File Explorer y escriba `%APPDATA%\TurtleCoin` y presione enter.
 
     ![file explorer](images/bootstrap/file_explorer.jpg)
 
-    !!! note
-        If the folder doesn't exist, just go to `%APPDATA%` instead and create a folder named `TurtleCoin`.
+    !!! Nota
+        Si la carpeta no existe, solo ve a ella `%APPDATA%` y crea una carpeta con el nombre `TurtleCoin`.
 
 
-3. Delete the following if they exist:
+3. Elimine los siguientes si existen:
     * blockindexes.bin
     * blocks.bin
     * "DB" folder
@@ -21,49 +21,49 @@ This guide will help you install a recent copy of the blockchain. This should si
 
     ---
     
-    **Note**: In case it is unable to delete the files due to them being used by some other program, follow these steps:
+    **Nota**: En caso de que no pueda eliminar los archivos debido a que son utilizados por algún otro programa, siga estos         pasos:
     
-    * Open Task Manager with the shortcut `Ctrl + Shift+ Escape`.
+    * Abra el Administrador de tareas con el acceso directo `Ctrl + Shift+ Escape`.
       
-    * Click on `Processes`.
+    * Haga clic en `Processes`.
       
-    * Click on `Image Name`.
+    * Haga clic en `Image Name`.
       
-    * Scroll to the bottom.
+    * Desplázate hacia abajo.
       
-    * Click on `walletd.exe`
+    * Haga clic en `walletd.exe`
       
-    * Click on `End Process`.
+    * Haga clic en `End Process`.
       
-    * Click on `End Process` again.
+    * Haga clic en `End Process` nuevamente.
       
-    * Try to delete them again.
+    * Intenta borrarlos de nuevo.
     
     ![closewallet](images/bootstrap/close_walletd.png)
     
     ---
 
 
-4. [Download](https://f000.backblazeb2.com/file/turtle-blockchain/latest.zip) the latest snapshot of the blockchain.
+4. [Descargue](https://f000.backblazeb2.com/file/turtle-blockchain/latest.zip) la última instantánea de la cadena de bloques.
 
-5. Move the two new downloaded files to the `%APPDATA%\TurtleCoin` folder.
+5. Mueva los dos nuevos archivos descargados a la `%APPDATA%\TurtleCoin` carpeta.
 
-6. Start `TurtleCoind.exe` or the GUI wallet like you normally do.
+6. Comience `TurtleCoind.exe` o la billetera GUI como lo hace normalmente.
 
-7. See [Expected Results](#ExpectedResults) section below.
+7. Vea la sección de [Resultados Esperados](#ExpectedResults) a continuación.
 
 
 
 ## Mac & Linux:
-1. Make sure `TurtleCoind`, `walletd`, and/or the GUI wallet are not running.
+1. Asegúrese de que `TurtleCoind`, `walletd`, y / o la billetera GUI no se estén ejecutando.
 
-2. Open `Finder`.
+2. Abrá `Finder`.
 
-3. Use the shortcut `Command + Shift + G` to bring up `Go to Folder`:
+3. Utilice el atajo `Command + Shift + G` para que aparezca `Go to Folder`:
 
     ![findergoto.jpg](images/bootstrap/findergoto.jpg)
 
-4. Delete the following if they exist: 
+4. Elimine los siguientes si existen:
 
     * blockindexes.bin 
 
@@ -72,17 +72,17 @@ This guide will help you install a recent copy of the blockchain. This should si
     * "DB" folder 
 
 
-5. [Download](https://f000.backblazeb2.com/file/turtle-blockchain/latest.zip) the latest snapshot of the blockchain.
+5. [Descargue](https://f000.backblazeb2.com/file/turtle-blockchain/latest.zip) la última instantánea de la cadena de bloques.
 
-6. Move the two new downloaded files, `blockindexes.bin` and `blocks.bin` into the `~/.TurtleCoin/` folder.
+6. Mueva los dos nuevos archivos descargados, `blockindexes.bin` y `blocks.bin` dentro de la `~/.TurtleCoin/` carpeta.
 
-7. Start `TurtleCoind` or the GUI like you normally do.
+7. Comience `TurtleCoind` o la GUI como lo hace normalmente.
 
-8. See the [Expected Results](#ExpectedResults) section below.
+8. Vea la sección de [Resultados Esperados](#ExpectedResults) a continuación.
 
-## Expected Results if Done Correctly <a name="ExpectedResults"></a>
+## Resultados esperados si se hace correctamente <a name="ExpectedResults"></a>
 
-When you start `TurtleCoind` you should see this. Note that the blocksize (150246) in this example will be a different number:
+Cuando comiences `TurtleCoind` you should see this. deberías ver esto. Tenga en cuenta que el tamaño de bloques (150246) en este ejemplo será un número diferente:
 ```
 2018-Feb-01 18:43:37.216471 INFO    Initializing core...
 2018-Feb-01 18:43:37.225492 INFO    Importing blocks from blockchain storage
@@ -94,11 +94,11 @@ When you start `TurtleCoind` you should see this. Note that the blocksize (15024
 2018-Feb-01 18:43:40.830674 INFO    Imported block with index 6000 / 150246
 ```
 
-After it completes it will start syncing incrementally like so:
+Después de que se complete, comenzará a sincronizarse incrementalmente de esta manera:
 ```
 2018-Feb-01 18:47:48.075930 INFO    Imported block with index 150000 / 150246
 2018-Feb-01 18:47:48.860470 INFO    Core initialized OK
 2018-Feb-01 18:47:48.860470 INFO    Initializing p2p server...
 ```
 
-If you are using the GUI wallet, you can instead view the progress by opening `walletd.log` and scrolling to the bottom.
+Si está utilizando la billetera GUI, puede ver el progreso abriendo `walletd.log` y desplazándose hacia la parte inferior.
