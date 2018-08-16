@@ -1,9 +1,9 @@
-# Developer Resources
+# Recursos del desarrollador
 
-Technical resources to start building on TurtleCoin.
+Recursos técnicos para comenzar a construir en TurtleCoin.
 
 
-## Wallet RPC API Clients
+## Clientes de billeteras API RPC
 
 * [Javascript](https://github.com/turtlecoin/turtlecoin-walletd-rpc-js)
 * [NodeJS](https://www.npmjs.com/package/turtlecoin-rpc)
@@ -11,31 +11,31 @@ Technical resources to start building on TurtleCoin.
 * [PHP](https://github.com/turtlecoin/turtlecoin-walletd-rpc-php)
 * [Python](https://github.com/turtlecoin/turtlecoin-walletd-rpc-python)
 
-See [API Documentation](https://api-docs.turtlecoin.lol/) for usage.
+Ver la [documentación de la API](https://api-docs.turtlecoin.lol/) para su uso.
 
-## TurtleCoind RPC clients
+## Clientes RPC TurtleCoin
 
-* [Javascript](https://github.com/turtlecoin/turtlecoind-rpc-js): A JavaScript wrapper for the TurtleCoind daemon RPC interface.
-* [NodeJS](https://www.npmjs.com/package/turtlecoin-rpc): This project is designed to make it very easy to interact with various RPC APIs available within the TurtleCoin Project. This entire project uses Javascript Promises to make things fast, easy, and safe.
-* [Go](https://www.github.com/turtlecoin/turtlecoin-rpc-go): A Golang wrapper for the TurtleCoin RPC API. This project makes it easy to send requests to particular RPC server and returns a clear response without any abrupt termination.
-* [Python](https://github.com/turtlecoin/turtlecoin-walletd-rpc-python): A Python wrapper for the TurtleCoind and Walletd RPC interface
+* [Javascript](https://github.com/turtlecoin/turtlecoind-rpc-js): un contenedor de JavaScript para la interfaz de servicio RPC de TurtleCoind.
+* [NodeJS](https://www.npmjs.com/package/turtlecoin-rpc): este proyecto está diseñado para facilitar la interacción con varias API's de RPC disponibles dentro del Proyecto TurtleCoin. Este proyecto completo utiliza Javascript Promises para hacer que las cosas sean rápidas, fáciles y seguras.
+* [Go](https://www.github.com/turtlecoin/turtlecoin-rpc-go): Un contenedor de Golang para la API TurtleCoin RPC. Este proyecto facilita el envío de solicitudes a un servidor RPC en particular y devuelve una respuesta clara sin una terminación abrupta.
+* [Python](https://github.com/turtlecoin/turtlecoin-walletd-rpc-python): un contenedor Python para la interfaz TurtleCoind y Walletd RPC
 
-See [API Documentation](https://api-docs.turtlecoin.lol/) for usage.
+Ver la [documentación de la API](https://api-docs.turtlecoin.lol/) para el uso.
 
-## Libraries
+## Bibliotecas
 
-* [Woo Turtle](https://github.com/turtlecoin/woo-turtle): A TurtleCoin Payment Gateway Plugin for WooCommerce.
-* [turtlecoin/turtlecoin-walletd-csharp](https://github.com/turtlecoin/turtlecoin-walletd-csharp): An asynchronous wrapper API for loading and accessing the TurtleCoin daemon and wallet applications. Built to ease the creation of wallets and applications that want to pull data from the network.
-* [TurtleCoind-ha](https://github.com/turtlecoin/turtlecoind-ha): NodeJS TurtleCoin Walletd High-Availability Wrapper
-* [Walletd-ha](https://github.com/turtlecoin/walletd-ha): NodeJS TurtleCoin Walletd High-Availability Wrapper
+* [Woo Turtle](https://github.com/turtlecoin/woo-turtle): Un complemento de puerta de enlace de pago TurtleCoin para WooCommerce.
+* [turtlecoin/turtlecoin-walletd-csharp](https://github.com/turtlecoin/turtlecoin-walletd-csharp): una API de contenedor asíncrono para cargar y acceder a las aplicaciones de servicio y billetera de TurtleCoin. Creado para facilitar la creación de monederos y aplicaciones que desean extraer datos de la red.
+* [TurtleCoind-ha](https://github.com/turtlecoin/turtlecoind-ha): Contenedor de alta disponibilidad TurtleCoin Walletd NodeJS
+* [Walletd-ha](https://github.com/turtlecoin/walletd-ha): Contenedor de alta disponibilidad TurtleCoin Walletd NodeJS
 
-## Reads
+## Lee
 
-* [turtlecoin/cs-turtlecoin](https://github.com/turtlecoin/cs-turtlecoin): TurtleCoin daemon spec and PoC.
-* [Developer blog](https://medium.com/@turtlecoin)
-* [Bytecoin docs](https://wiki.bytecoin.org/wiki/Main_Page)
+* [turtlecoin/cs-turtlecoin](https://github.com/turtlecoin/cs-turtlecoin): especificación del servicio de TurtleCoin y PoC.
+* [Blog de desarrollador](https://medium.com/@turtlecoin)
+* [Documentos de Bytecoin](https://wiki.bytecoin.org/wiki/Main_Page)
 
 
-## Design
+## Diseño
 
-* [Brand Guidelines](https://github.com/turtlecoin/brand)
+* [Directrices de la marca](https://github.com/turtlecoin/brand)
