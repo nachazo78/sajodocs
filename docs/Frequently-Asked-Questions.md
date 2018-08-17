@@ -15,35 +15,35 @@
 
 R: Visitá el sitio web de tu pool. Deberia haber un lugar en donde poner tu dirección de TRTL, y poder ver tu hashrate, el balance pendiente, pagos y mas.
 
-#### P: ¿Porque el hashrate en el pool es  diferente al que se muestra en mi minero?
+#### P: ¿Por que el hashrate en el pool es  diferente al que se muestra en mi minero?
 
 R: Los valores siempre seran un poco diferentes, pero si existe una gran diferencia, is probable que simplemente estes empezando a minar.
 
-Tu hashrate es calculado con el correr del tiempo, se ira acomodando.
+Tu hashrate es calculado con el correr del tiempo, se irá acomodando.
 
-#### Q: I've been mining for a while, but my pending balance hasn't gone up?<a name="pending-balance-not-gone-up"></a>
+#### P: Estuve minando por un tiempo, pero mi balance pendiente no se incremento ¿Por que puede ser? <a name="pending-balance-not-gone-up"></a>
 
-A: On your pool website, check the time that the last block was found on your pool, and the average time to find a block.
+R: En la página de tu pool, fijate la hora en que el ultimo bloque fue encontrado, y el tiempo promedio en encontrar un bloque.
 
-Your stats will only update when your pool finds a block and it matures, so if your pool doesn't find blocks very often, you will have slower updating stats.
+Tus estadísticas solo se actualizaran cuando tu pool encuentre un bloque y el mismo madure, entonces si tu pool no encuentra bloques muy seguido, las estadisticas se actualizarn mas lentamente.
 
-#### Q: I've been mining, but the balance in my wallet hasn't gone up?
+#### P: stuve minando, pero el balance de mi monedero no se incrementa ¿Porque puede ser?
 
-A: To save money on fees, the pools send payouts in chunks. [Check your pool website for your pending balance](#pending-balance-not-gone-up).
+R: Para ahorrar dinero en tasas (fee), el pool envia los pagos en trozos. [Chequea el balance pendiente en el sitio web de tu pool](#pending-balance-not-gone-up).
 
-#### Q: Why are my results being rejected from the pool?
+#### P: ¿Por que mis resoluciones estan siendo rechazadas por el pool? 
 
- A: You're using a incorrect algorithm. If you are using XMR-Stak, you should use `turtlecoin` as the algorithm, if you are using XMRig use `cryptonight-lite` as the algorithm and have the variant set to 1.
+ R: Estas usando un algoritmo de minado incorrecto. Si estas usando XMR-Stak, deberias usar `turtlecoin` como algoritmo de minado, si estas usando XMRig deberias usar `cryptonight-lite` como algoritmo y setear la variante en 1.
 
-#### Q: I got banned from my mining pool. Why?
+####P: Fue expulsado (baneado) de el pool de minado. ¿Por que?
 
-A: If you submit lots of invalid shares, a pool might ban you. Possible reasons for invalid shares can be
+R: Si envias resoluciones invalidas(invalid shares), un buen pool puede que te expulse. La razón posible puede ser:
 
-* your hardware getting overworked,
+* que tu hard este overclokeado,
 
-* high ping to the pool,
+* Ping alto,
 
-* or your difficulty being set too low.
+* Que la dificultad este seteada muy baja.
 
   Try lowering any overclocks, choosing a pool closer to you or setting a higher difficulty port.
 
